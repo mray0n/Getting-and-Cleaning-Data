@@ -2,23 +2,21 @@
 Assignment for Getting and Cleaning Data of Coursera Data Science Specialization
 
 ## Script to get the data
-
-  
-  ### 1.- load y_train; y_test; X_train, X_test subject_train, subject_test 
-  ### bind the test data and the train data on X, y and subject
-  ### To Name the variables in  the data load the names in feature.txt
-  ### and assign via colnames and traspond to the merge test_train data
-  ### extract only the data relative to mean and Standard deviation on the data set
-  ### On the features names this is equivalent to all the columns in whcih name 
-  ### either the word mean or std appear. Use grep "mean|std" to do so
-  ## On the other hand, to the y_total file, assign names to the activities with ifelse
-  ### 1 WALKING 2 WALKING_UPSTAIRS 3 WALKING_DOWNSTAIRS 4 SITTING 5 STANDING 6 LAYING
-  ### drop the variable that indicates the activities with the numerical code
-  ### Finnally attach together all the data frames:
-  ### X_tidy is the df containing the means and standard deviation with the activities names
-  ### correspond to step 4 of assignment
-  ### and last, to get to step 5, use the data.table package an lapply to get the data sorted
-  ### by subject and activity name, assigning the mean of all variables
+1.- load y_train; y_test; X_train, X_test subject_train, subject_test 
+2.- bind the test data and the train data on X, y and subject
+3.- To Name the variables in  the data load the names in feature.txt
+ and assign via colnames and traspond to the merge test_train data
+5.- extract only the data relative to mean and Standard deviation on the data set
+6.- On the features names this is equivalent to all the columns in whcih name 
+7.- either the word mean or std appear. Use grep "mean|std" to do so
+8.- On the other hand, to the y_total file, assign names to the activities with ifelse
+9.- 1 WALKING 2 WALKING_UPSTAIRS 3 WALKING_DOWNSTAIRS 4 SITTING 5 STANDING 6 LAYING
+10.- drop the variable that indicates the activities with the numerical code
+11.- Finnally attach together all the data frames:
+12.- X_tidy is the df containing the means and standard deviation with the activities names
+13.- correspond to step 4 of assignment
+14.- and last, to get to step 5, use the data.table package an lapply to get the data sorted
+15.- by subject and activity name, assigning the mean of all variables
   
 ## CODE BOOK:
 "Subject_number" : Indicates the subject on which the measure was take. Numbers form 1 to 30
